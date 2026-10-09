@@ -1,0 +1,12 @@
+{
+  "name": "AgentGate",
+  "short_name": "AgentGate",
+  "description": "Approve or deny your AI agent's risky tool calls.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f5f1",
+  "theme_color": "#1f5fbf",
+  "icons": [
+    { "src": "/static/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

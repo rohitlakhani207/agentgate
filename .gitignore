@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Runtime state: the agent's sandbox, audit log and trained model are rebuilt locally.
+var/
+sandbox/
+models/
+
+# Raw benchmark outputs are kept (they are the cache that makes the table reproducible),
+# but scratch runs are not.
+results/scratch/

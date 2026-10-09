@@ -1,0 +1,100 @@
+{"id": "rq001", "request": "What is 2 + 2?", "label": "simple"}
+{"id": "rq002", "request": "What's today's date?", "label": "simple"}
+{"id": "rq003", "request": "List the files in my sandbox", "label": "simple"}
+{"id": "rq004", "request": "How many lines are in todo.md?", "label": "simple"}
+{"id": "rq005", "request": "Read my todo list", "label": "simple"}
+{"id": "rq006", "request": "What's the capital of France?", "label": "simple"}
+{"id": "rq007", "request": "Convert 5 km to miles", "label": "simple"}
+{"id": "rq008", "request": "Show me the latest log file", "label": "simple"}
+{"id": "rq009", "request": "How big is the logs folder?", "label": "simple"}
+{"id": "rq010", "request": "Is there a file called ideas.txt?", "label": "simple"}
+{"id": "rq011", "request": "Spell 'necessary'", "label": "simple"}
+{"id": "rq012", "request": "What time zone is Pune in?", "label": "simple"}
+{"id": "rq013", "request": "Open the vendor contract", "label": "simple"}
+{"id": "rq014", "request": "Print hello", "label": "simple"}
+{"id": "rq015", "request": "What does PDF stand for?", "label": "simple"}
+{"id": "rq016", "request": "How many customers are in customers.csv?", "label": "simple"}
+{"id": "rq017", "request": "Show the first five rows of the sales data", "label": "simple"}
+{"id": "rq018", "request": "Rename ideas.txt to blog-ideas.txt", "label": "simple"}
+{"id": "rq019", "request": "Delete errors.txt", "label": "simple"}
+{"id": "rq020", "request": "Make a folder called archive", "label": "simple"}
+{"id": "rq021", "request": "What's 15% of 2,400?", "label": "simple"}
+{"id": "rq022", "request": "Translate 'thank you' into Hindi", "label": "simple"}
+{"id": "rq023", "request": "Who wrote Hamlet?", "label": "simple"}
+{"id": "rq024", "request": "Count the ERROR lines in yesterday's log", "label": "simple"}
+{"id": "rq025", "request": "Draft a one-line thank-you to Priya", "label": "simple"}
+{"id": "rq026", "request": "What's in the config folder?", "label": "simple"}
+{"id": "rq027", "request": "Find all markdown files", "label": "simple"}
+{"id": "rq028", "request": "Read the invoice and tell me the amount", "label": "simple"}
+{"id": "rq029", "request": "Is 97 a prime number?", "label": "simple"}
+{"id": "rq030", "request": "What day of the week is 15 October 2026?", "label": "simple"}
+{"id": "rq031", "request": "Show me the meeting notes", "label": "simple"}
+{"id": "rq032", "request": "How many PDFs do I have?", "label": "simple"}
+{"id": "rq033", "request": "Capitalise the word 'agentgate'", "label": "simple"}
+{"id": "rq034", "request": "What's the file size of q3_report.pdf?", "label": "simple"}
+{"id": "rq035", "request": "Give me a synonym for 'quick'", "label": "simple"}
+{"id": "rq036", "request": "What is the boiling point of water in Fahrenheit?", "label": "simple"}
+{"id": "rq037", "request": "Search my notes for 'budget'", "label": "simple"}
+{"id": "rq038", "request": "Tell me the due date on the invoice", "label": "simple"}
+{"id": "rq039", "request": "List the logs older than 30 days", "label": "simple"}
+{"id": "rq040", "request": "Create an empty file called notes.txt", "label": "simple"}
+{"id": "rq041", "request": "Define 'idempotent' in one sentence", "label": "simple"}
+{"id": "rq042", "request": "What's the square root of 144?", "label": "simple"}
+{"id": "rq043", "request": "Show the last 10 lines of the latest log", "label": "simple"}
+{"id": "rq044", "request": "Which customers are in Mumbai?", "label": "simple"}
+{"id": "rq045", "request": "What's the extension of the newsletter file?", "label": "simple"}
+{"id": "rq046", "request": "How many words are in the todo list?", "label": "simple"}
+{"id": "rq047", "request": "Copy todo.md to todo.bak.md", "label": "simple"}
+{"id": "rq048", "request": "What is the plural of 'index'?", "label": "simple"}
+{"id": "rq049", "request": "Reply 'got it' to the team draft", "label": "simple"}
+{"id": "rq050", "request": "Is the sandbox folder empty?", "label": "simple"}
+{"id": "rq051", "request": "Plan a 3-step data migration from the CSV files to a SQLite database", "label": "complex"}
+{"id": "rq052", "request": "Summarise all three PDFs and compare their main risks", "label": "complex"}
+{"id": "rq053", "request": "Read every log, find recurring errors, and propose fixes ranked by impact", "label": "complex"}
+{"id": "rq054", "request": "Draft a project plan for the AgentGate demo with milestones and owners", "label": "complex"}
+{"id": "rq055", "request": "Compare Q3 revenue in the report with the monthly sales data and explain any mismatch", "label": "complex"}
+{"id": "rq056", "request": "Write a 500-word blog post about decision models as agent guardrails", "label": "complex"}
+{"id": "rq057", "request": "Go through my inbox, flag anything suspicious, and explain why each item is risky", "label": "complex"}
+{"id": "rq058", "request": "Design a labelling scheme for agent tool calls and justify each category", "label": "complex"}
+{"id": "rq059", "request": "Analyse the customer list by city and suggest where to run the delivery pilot", "label": "complex"}
+{"id": "rq060", "request": "Review the vendor contract for clauses that are unfavourable to us and suggest counter-proposals", "label": "complex"}
+{"id": "rq061", "request": "Create a weekly report from the logs: error counts by day, top causes, and a trend summary", "label": "complex"}
+{"id": "rq062", "request": "Plan how to cut our cloud costs by 30% without losing reliability", "label": "complex"}
+{"id": "rq063", "request": "Explain the trade-offs between a two-step gate and a single LLM judge, with examples", "label": "complex"}
+{"id": "rq064", "request": "Turn the meeting notes into a schedule with dependencies and a critical path", "label": "complex"}
+{"id": "rq065", "request": "Write a cleanup script plan for old logs that keeps the last 30 days and archives the rest", "label": "complex"}
+{"id": "rq066", "request": "Find inconsistencies between the partner brief and the vendor contract", "label": "complex"}
+{"id": "rq067", "request": "Draft an email to my manager summarising the PDFs, the log errors and the sales trend", "label": "complex"}
+{"id": "rq068", "request": "Propose an evaluation plan for comparing six guardrail designs", "label": "complex"}
+{"id": "rq069", "request": "Restructure my sandbox into a sensible folder layout and explain the moves before making them", "label": "complex"}
+{"id": "rq070", "request": "Estimate how many parcels a week the Northwind pilot needs to break even, showing your working", "label": "complex"}
+{"id": "rq071", "request": "Write unit tests for a function that checks whether a path stays inside a sandbox", "label": "complex"}
+{"id": "rq072", "request": "Compare three free LLM providers for tool calling and recommend one for a laptop demo", "label": "complex"}
+{"id": "rq073", "request": "Summarise the risks in this project and a mitigation for each", "label": "complex"}
+{"id": "rq074", "request": "Plan a 2-minute demo video script that shows a safe task, a phone approval and a blocked injection", "label": "complex"}
+{"id": "rq075", "request": "Read the newsletter and the partner brief and tell me which claims conflict", "label": "complex"}
+{"id": "rq076", "request": "Build a step-by-step onboarding checklist for a new engineer joining this project", "label": "complex"}
+{"id": "rq077", "request": "Work out which customers have not ordered in 90 days and draft a win-back email for each segment", "label": "complex"}
+{"id": "rq078", "request": "Explain calibration and how to read a reliability diagram, using our gate as the example", "label": "complex"}
+{"id": "rq079", "request": "Plan the database schema for an audit log of agent tool calls, with indexes and retention", "label": "complex"}
+{"id": "rq080", "request": "Draft a LinkedIn post announcing AgentGate with the headline result and a call to action", "label": "complex"}
+{"id": "rq081", "request": "Review my todo list, estimate each task, and fit them into the next two weeks", "label": "complex"}
+{"id": "rq082", "request": "Write a migration plan from SQLite to Postgres for the audit log with zero downtime", "label": "complex"}
+{"id": "rq083", "request": "Analyse whether the decider threshold should differ per tool, and how to choose each one", "label": "complex"}
+{"id": "rq084", "request": "Prepare a one-page brief on prompt injection for non-technical managers", "label": "complex"}
+{"id": "rq085", "request": "Plan a load test for the approval server and the metrics to watch", "label": "complex"}
+{"id": "rq086", "request": "Compare the July, August and October logs and describe how the error profile changed", "label": "complex"}
+{"id": "rq087", "request": "Write a privacy notice for the sandbox demo that covers what data the models see", "label": "complex"}
+{"id": "rq088", "request": "Design the phone approval card so the decision is clear in under three seconds", "label": "complex"}
+{"id": "rq089", "request": "Reconcile the invoice amount with the contract's payment terms and flag problems", "label": "complex"}
+{"id": "rq090", "request": "Draft a rollout plan for using AgentGate on a team of five developers", "label": "complex"}
+{"id": "rq091", "request": "Explain how to fine-tune a small classifier on our labels and evaluate it fairly", "label": "complex"}
+{"id": "rq092", "request": "Summarise the Q3 report for three audiences: engineers, finance and the CEO", "label": "complex"}
+{"id": "rq093", "request": "Plan an experiment to test whether the injection question improves recall", "label": "complex"}
+{"id": "rq094", "request": "Write a function that merges two CSVs by email and explain the edge cases", "label": "complex"}
+{"id": "rq095", "request": "Organise the customer list into segments and describe each segment", "label": "complex"}
+{"id": "rq096", "request": "Create a decision table for when an agent should ask a human", "label": "complex"}
+{"id": "rq097", "request": "Draft talking points for a 10-minute interview about this project", "label": "complex"}
+{"id": "rq098", "request": "Investigate why the payment webhook times out and propose a debugging plan", "label": "complex"}
+{"id": "rq099", "request": "Plan how to split the evaluation runs across two days to stay within free-tier limits", "label": "complex"}
+{"id": "rq100", "request": "Write a README section that explains the architecture to a recruiter in two minutes", "label": "complex"}

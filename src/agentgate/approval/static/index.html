@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>AgentGate</title>
+  <link rel="manifest" href="/static/manifest.webmanifest">
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/static/icon.svg">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="brand">
+      <img src="/static/icon.svg" alt="" width="24" height="24">
+      <span>AgentGate</span>
+    </div>
+    <span id="status" class="pill" data-state="off">Offline</span>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-pending" aria-selected="true" data-view="pending">
+      Pending <span id="count" class="count" hidden>0</span>
+    </button>
+    <button role="tab" id="tab-history" aria-selected="false" data-view="history">History</button>
+  </nav>
+
+  <main>
+    <section id="view-pair" class="view" hidden>
+      <div class="pair">
+        <h1>Pair this phone</h1>
+        <p>Scan the QR code printed by <code>agentgate serve</code>, or paste the token from <code>var/token</code>.</p>
+        <form id="pair-form">
+          <input id="pair-token" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Token" required>
+          <button type="submit" class="btn primary">Connect</button>
+        </form>
+        <p id="pair-error" class="error" hidden></p>
+      </div>
+    </section>
+
+    <section id="view-pending" class="view">
+      <div id="cards"></div>
+      <div id="empty" class="empty">
+        <div class="empty-mark" aria-hidden="true"></div>
+        <h2>Nothing needs you</h2>
+        <p>Safe calls run on their own. Risky or unclear ones will show up here, and you'll have 60 seconds to answer.</p>
+      </div>
+    </section>
+
+    <section id="view-history" class="view" hidden>
+      <ol id="history" class="history"></ol>
+      <p id="history-empty" class="muted center" hidden>No tool calls yet.</p>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

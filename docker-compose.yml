@@ -1,0 +1,40 @@
+# docker compose up -d                  approval server + Decider (step 1)
+# docker compose --profile clef up -d   ...plus Clef-flash (step 2, ~7 GB more RAM)
+#
+# The agent, the demo and the benchmark run on the host (`uv run agentgate ...`) and
+# reach these on localhost. If the laptop is too small for a model, run it on a free
+# Colab/Kaggle GPU instead (notebooks/models_on_colab.ipynb) and point
+# AGENTGATE_DECIDER_URL / AGENTGATE_CLEF_URL at the tunnel.
+
+services:
+  server:
+    build: .
+    ports: ["8080:8080"]
+    env_file: [{ path: .env, required: false }]
+    environment:
+      AGENTGATE_AUDIT_DB: /app/var/audit.sqlite
+      AGENTGATE_TOKEN_FILE: /app/var/token
+    # Run as you, so var/token and the audit log stay readable by the host-side agent.
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes: ["./var:/app/var"]
+    restart: unless-stopped
+
+  decider:
+    build: { context: ., dockerfile: docker/decider.Dockerfile }
+    ports: ["8001:8001"]
+    volumes: ["models:/models"]
+    restart: unless-stopped
+
+  clef:
+    profiles: ["clef"]
+    # llama.cpp gained Clef (PR #29831) and /v1/systemone (PR #29818) in early Oct 2026.
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command: ["-hf", "ggml-org/Clef-Flash-GGUF:Q4_K_M", "--host", "0.0.0.0", "--port", "8002", "-c", "8192"]
+    ports: ["8002:8002"]
+    environment:
+      LLAMA_CACHE: /models
+    volumes: ["models:/models"]
+    restart: unless-stopped
+
+volumes:
+  models:

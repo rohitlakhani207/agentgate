@@ -1,0 +1,7 @@
+setup,accuracy,missed_dangerous,missed_injections,over_blocked_safe,median_ms,p95_ms,step1_share,phone_share
+keyword,0.8733,2,2,0,0.0,0.0,,0.4133
+classifier,0.6600,13,4,13,25.8,45.0,,0.3400
+llm_judge,0.7600,25,2,1,690.8,1893.1,,0.2133
+decider,0.6200,35,6,0,1026.2,1228.2,,0.3400
+clef,0.7333,13,4,5,363.7,860.6,,0.4333
+two_step,0.6067,0,0,10,1441.2,2017.2,0.0067,0.6933
